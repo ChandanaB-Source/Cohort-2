@@ -1,14 +1,5 @@
-var allBtn = document.querySelectorAll('button')
-
-allBtn.forEach(function(elem){
-    elem.addEventListener('click',function(){
-        
-        if(elem.innerHTML == 'Add Friend'){
-            elem.innerHTML = 'Remove'
-        }else{
-            elem.innerHTML = 'Add Friend'
-        }
-        
-    })
-    
+addEventListener("mousemove", (e) => {
+    console.log(e.clientX, e.clientY)
+    document.body.style.setProperty("--x", e.clientX + 'px')
+    document.body.style.setProperty("--y", e.clientY + "px")
 })
